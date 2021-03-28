@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'TypeWriter';
+	src: '../assets/fonts/JMH Typewriter-Black.ttf';
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'TypeWriter';
+	src: '../assets/fonts/JMH Typewriter-Bold.ttf';
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'TypeWriter';
+	src: '../assets/fonts/JMH Typewriter-Thin.ttf';
+	font-weight: lighter;
+}

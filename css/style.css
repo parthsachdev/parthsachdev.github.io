@@ -1,0 +1,19 @@
+@import './typewriter.css';
+
+* {
+  box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.hero h1 {
+	font-size: 3rem;
+	border-right: 4px solid black;
+	font-family: 'TypeWriter';
+}
