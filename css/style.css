@@ -1,30 +1,88 @@
 @import './typewriter.css';
 
+:root {
+	--bg-color: #aaa;
+	--text-color: rgb(31, 28, 28);
+	--divider-color: rgb(158, 149, 149);
+}
+
 * {
   box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
+	color: var(--text-color);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+/* main */
+
+.main {
+	position: relative;
+}
+
+.header {
+	width: 100%;
+
+	position: fixed;
+	border-bottom: 1px solid var(--divider-color);
+}
+
+.header nav {
+	max-width: 80vw;
+	margin: 0 auto;
+
+	display: flex;
+}
+
+.header nav li {
+	list-style-type: none;
+	padding: 10px;
+	transition: background-color 200ms ease-in;
+}
+
+
+.header nav li:hover {
+	cursor: pointer;
+	background-color: #777;
 }
 
 .hero {
-	display: grid;
-	place-items: center;
+	max-width: 80vw;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
-	width: 100vw;
 }
 
-.hero h1 {
-	font-size: 3rem;
-	border-right: 4px solid black;
-	font-family: 'TypeWriter';
-	animation: blinking 800ms infinite;
-	padding: 0 5px;
+.hero .dp {
+	margin-right: 20px;
 }
 
-@keyframes blinking {
-	0% {
-		border-right: hidden;
-	}
-	100% {
-		border-right: visible;
-	}
+.hero .dp img {
+	border-radius: 50%;
+	width: 130px;
+	height: auto;
+}
+
+.hero .title {
+	padding: 4px;
+}
+
+.hero .title h1 {
+	font-size: 2rem;
+	letter-spacing: 2px;
+	line-height: 50px;
+}
+
+.hero .title h3 {
+	letter-spacing: 1px;
+	opacity: 0;
+	transition: opacity 500ms ease-in;
 }
