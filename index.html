@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Parth Sachdev</title>
-		<meta name="description" content="A simple web porfolio">
-		<meta name="author" content="Parth Sachdev">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500;600;700;800;900&display=swap" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
-		<link rel="icon" type="image/png" href="/favicon.png"/>
+<head>
+	<meta charset="utf-8">
+	<title>Parth Sachdev</title>
+	<meta name="description" content="A simple web porfolio">
+	<meta name="author" content="Parth Sachdev">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	</head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="/favicon.png" />
 
-	<body>
-		<div class="main">
-			<div class="header">
-				<div class="navbar">
-					<nav class="nav-logo">
-						<li>PORTFOLIO</li>
-					</nav>
-					<nav class="nav-button">
-						<li>Home</li>
-						<li>Experience</li>
-						<li>Download</li>
-					</nav>
-				</div>
+</head>
+
+<body>
+	<div class="header">
+		<div class="navbar">
+			<nav class="nav-logo">
+				<li>PORTFOLIO</li>
+			</nav>
+			<nav class="nav-button">
+				<li>Home</li>
+				<li>Experience</li>
+				<li>Download</li>
+			</nav>
+		</div>
+	</div>
+	<div class="main">
+		<div class="hero">
+			<div class="dp">
+				<img src="assets/images/dp.png">
 			</div>
-			<div class="hero">
-				<div class="dp">
-					<img src="assets/images/dp.png">
-				</div>
-				<div class="title">
-					<h1>Hello, I'm Parth.</h1>
-					<h3>I'm a full stack web developer.</h3>
-				</div>
-				<div class="down-arrow animate__animated animate__bounce">
-					<span class="material-icons icon">expand_more</span>
-				</div>
+			<div class="title">
+				<h1>Hello, I'm Parth.</h1>
+				<h3>I'm a full stack web developer.</h3>
+			</div>
+			<div class="down-arrow animate__animated animate__bounce">
+				<span class="material-icons icon">expand_more</span>
 			</div>
 		</div>
 		<div class="page2">
-			<img src="assets/images/laptop-1209008_640.jpg"
-				class="work-image"
-				alt="Laptop"
-				loading="lazy">
+			<img src="assets/images/laptop-1209008_640.jpg" class="work-image" alt="Laptop" loading="lazy">
 			<div class="work">
 				<h1 class="title">Work Experience</h1>
 				<div class="item">
-					<h2>Full Stack Web developer</h2>
-					<h3>Brandie</h3>
+					<h4>Full Stack Web developer</h4>
+					<h5>Brandie</h5>
 					<div class="pl">
 						<div class="pl-item">
-							<span class="material-icons-outlined">
+							<span class="material-icons">
 								calendar_today
 							</span>
 							<span class="value">
@@ -65,7 +65,7 @@
 							</span>
 						</div>
 						<div class="pl-item">
-							<span class="material-icons-outlined">
+							<span class="material-icons">
 								location_on
 							</span>
 							<span class="value">
@@ -73,11 +73,60 @@
 							</span>
 						</div>
 					</div>
+					<ul class="details">
+						<li class="d-item">
+							Worked on building a web dashboard for viewing statistics and content uploaded by users.
+						</li>
+						<li class="d-item">
+							The front end was built using Angular which was later pivoted to Flutter.
+						</li>
+						<li class="d-item">
+							The API for the dashboard was built using NodeJS on the server side and Postgres for the database.
+						</li>
+						<li class="d-item">
+							Integrated Stripe Payments API for this project.
+						</li>
+					</ul>
+				</div>
+				<div class="divider"></div>
+				<div class="item">
+					<h4>Finance Analyst Intern</h4>
+					<h5>Invsto</h5>
+					<div class="pl">
+						<div class="pl-item">
+							<span class="material-icons">
+								calendar_today
+							</span>
+							<span class="value">
+								Mar 2019 - Nov 2019
+							</span>
+						</div>
+						<div class="pl-item">
+							<span class="material-icons">
+								location_on
+							</span>
+							<span class="value">
+								Bengaluru, India
+							</span>
+						</div>
+					</div>
+					<ul class="details">
+						<li class="d-item">
+							Backtesting: Building financial strategies and analyzers for the OHLC market data using Python
+						</li>
+						<li class="d-item">
+							Scraping the financial Statements of hundreds of equities using Python modules 'BeautifulSoup' and
+							'pandas'. Also, implementing financial models, such as Discounted Cash Flow, that uses this data to tell a
+							company's worth.
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="content"></div>
-		<script src="jquery-3.6.0.js"></script>
-		<script src="index.js"></script>
-	</body>
+	</div>
+	<div class="content"></div>
+	<script src="jquery-3.6.0.js"></script>
+	<script src="index.js"></script>
+</body>
+
 </html>
