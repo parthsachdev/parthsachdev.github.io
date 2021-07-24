@@ -1,14 +1,16 @@
 @import './typewriter.css';
 
 :root {
-	--bg-color: #aaa;
+	--bg-color: #ccc;
 	--text-color: rgb(31, 28, 28);
 	--divider-color: rgb(158, 149, 149);
+	--header-bg-color: rgb(120, 120, 120, 0.9);
+	--nav-button-hover-color: white;
 }
 
 * {
   box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Encode Sans SC', sans-serif;
 	color: var(--text-color);
 	box-sizing: border-box;
 	margin: 0;
@@ -30,30 +32,51 @@ body {
 
 	position: fixed;
 	border-bottom: 1px solid var(--divider-color);
+	background-color: var(--header-bg-color);
 }
 
-.header nav {
+.header .navbar {
 	max-width: 80vw;
 	margin: 0 auto;
 
-	display: flex;
+	position: relative;
 }
 
-.header nav li {
+.header li {
 	list-style-type: none;
 	padding: 10px;
 	transition: background-color 200ms ease-in;
 }
 
-
-.header nav li:hover {
+.header li:hover {
 	cursor: pointer;
-	background-color: #777;
+	background-color: var(--nav-button-hover-color);
 }
+
+.header .navbar .nav-logo {
+	width: min-content;
+}
+
+
+.header .navbar .nav-logo li {
+	font-family: 'Encode Sans SC';
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+.header .navbar .nav-button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+}
+
 
 .hero {
 	max-width: 80vw;
 	margin: 0 auto;
+
+	position: relative;
 
 	display: flex;
 	justify-content: center;
@@ -85,4 +108,32 @@ body {
 	letter-spacing: 1px;
 	opacity: 0;
 	transition: opacity 500ms ease-in;
+}
+
+.hero .down-arrow {
+	position: absolute;
+	bottom: 10px;
+	margin: 0 auto;
+}
+
+.hero .down-arrow .material-icons {
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.page2 {
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.page2 .work .title {
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.content {
+	height: 200vh;
 }
