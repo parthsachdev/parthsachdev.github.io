@@ -1,5 +1,8 @@
 $(function () {
 	startTitleAnimation();
+	$('#page1-down-btn').click(goToExperiencePage);
+	$('#nav-exp-btn').click(goToExperiencePage);
+	$('#nav-home-btn').click(goToHomePage);
 });
 
 async function startTitleAnimation () {
@@ -18,4 +21,16 @@ async function startTitleAnimation () {
 
 async function wait (ms, value) {
   return new Promise(resolve => setTimeout(resolve, ms, value));
+}
+
+function goToExperiencePage() {
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $('#page2').offset().top,
+	}, 1000);
+}
+
+function goToHomePage() {
+	$([document.documentElement, document.body]).animate({
+		scrollTop: $('#page1').offset().top,
+	}, 1000);
 }

@@ -38,7 +38,7 @@ body {
 	position: relative;
 	max-width: 1200px;
 	margin: 0 auto;
-	/* padding: 0 40px; */
+	padding: 0 40px;
 }
 
 .header {
@@ -47,11 +47,13 @@ body {
 	position: fixed;
 	border-bottom: 1px solid var(--divider-color);
 	background-color: var(--header-bg-color);
+	z-index: 2;
 }
 
 .header .navbar {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 40px;
 
 	position: relative;
 }
@@ -127,10 +129,17 @@ body {
 	margin: 0 auto;
 }
 
+.hero .down-arrow #page1-down-btn {
+	background: none;
+	border: none;
+	outline: none;
+}
+
 .hero .down-arrow .material-icons {
 	font-size: 32px;
 	cursor: pointer;
 }
+
 
 .page2 {
 	height: 100vh;
