@@ -21,4 +21,4 @@ jobs:
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
 
       - name: Rsync the build
-        run: rsync -rv ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/html
+        run: rsync -rv ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/html

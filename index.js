@@ -1,8 +1,10 @@
 $(function () {
 	startTitleAnimation();
-	$('#page1-down-btn').click(goToExperiencePage);
-	$('#nav-exp-btn').click(goToExperiencePage);
-	$('#nav-home-btn').click(goToHomePage);
+	$('#page1-down-btn').click('#page1', goToPage);
+	$('#nav-home-btn').click('#page1', goToPage);
+	$('#nav-exp-btn').click('#page2', goToPage);
+	$('#nav-project-btn').click('#page3', goToPage);
+	$('#nav-techskill-btn').click('#page4', goToPage);
 });
 
 async function startTitleAnimation () {
@@ -15,22 +17,14 @@ async function startTitleAnimation () {
 	}
 	var subtitle = $('.hero .title h3');
 	subtitle.css('opacity', 1);
-	// works if display is none in css
-	// subtitle.fadeIn('slow');
 }
 
 async function wait (ms, value) {
   return new Promise(resolve => setTimeout(resolve, ms, value));
 }
 
-function goToExperiencePage() {
+function goToPage(pageSelector) {
 	$([document.documentElement, document.body]).animate({
-		scrollTop: $('#page2').offset().top,
-	}, 1000);
-}
-
-function goToHomePage() {
-	$([document.documentElement, document.body]).animate({
-		scrollTop: $('#page1').offset().top,
+		scrollTop: $(pageSelector.handleObj.data).offset().top,
 	}, 1000);
 }
