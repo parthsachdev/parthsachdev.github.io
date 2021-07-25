@@ -20,5 +20,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
 
+      - name: Remove git directory
+        run: rm -rf .git/
+
       - name: Rsync the build
         run: rsync -rv ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/html
