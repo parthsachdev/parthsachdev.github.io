@@ -1,6 +1,6 @@
 $(function () {
 	startTitleAnimation();
-	$('#page1-down-btn').click('#page1', goToPage);
+	$('#page1-down-btn').click('#page2', goToPage);
 	$('#nav-home-btn').click('#page1', goToPage);
 	$('#nav-exp-btn').click('#page2', goToPage);
 	$('#nav-project-btn').click('#page3', goToPage);
