@@ -45,12 +45,21 @@
 	</div>
 	<div class="main">
 		<div class="hero" id="page1">
-			<div class="dp">
-				<img src="assets/images/dp.png">
-			</div>
-			<div class="title">
-				<h1>Hello, I'm Parth.</h1>
-				<h3>I'm a full stack web developer.</h3>
+			<div class="title-dp">
+				<div class="dp">
+					<img src="assets/images/dp.png">
+				</div>
+				<div class="title">
+					<h1>Hello, I'm Parth.</h1>
+					<h3>I'm a full stack web developer.</h3>
+				</div>
+				<div class="links">
+					<ul>
+						<li><a href="http://github.com/parthsachdev" target="_blank">Github</a></li>
+						<li><a href="https://www.linkedin.com/in/parth-sachdev-b79430149/" target="_blank">LinkedIn</a></li>
+						<li><a href="mailto:parthsachdev05@gmail.com">parthsachdev05@gmail.com</a></li>
+					</ul>
+				</div>
 			</div>
 			<div class="down-arrow animate__animated animate__bounce">
 				<button id="page1-down-btn">
@@ -59,176 +68,181 @@
 			</div>
 		</div>
 		<div class="page" id="page2">
-			<img src="assets/images/laptop-1209008_640.jpg" class="work-image" alt="Laptop" loading="lazy">
-			<div class="content">
-				<h1 class="title">Work Experience</h1>
-				<div class="item">
-					<h4>Full Stack Web developer</h4>
-					<h5>Brandie</h5>
-					<div class="pl">
-						<div class="pl-item">
-							<span class="material-icons">
-								calendar_today
-							</span>
-							<span class="value">
-								Jul 2020 - Present
-							</span>
+			<div class="container">
+				<img src="assets/images/laptop-1209008_640.jpg" class="work-image" alt="Laptop" loading="lazy">
+				<div class="content">
+					<h1 class="title">Work Experience</h1>
+					<div class="item">
+						<h4>Full Stack Web developer</h4>
+						<h5>Brandie</h5>
+						<div class="pl">
+							<div class="pl-item">
+								<span class="material-icons">
+									calendar_today
+								</span>
+								<span class="value">
+									Jul 2020 - Present
+								</span>
+							</div>
+							<div class="pl-item">
+								<span class="material-icons">
+									location_on
+								</span>
+								<span class="value">
+									Bengaluru, India
+								</span>
+							</div>
 						</div>
-						<div class="pl-item">
-							<span class="material-icons">
-								location_on
-							</span>
-							<span class="value">
-								Bengaluru, India
-							</span>
-						</div>
+						<ul class="details">
+							<li class="d-item">
+								Worked on building a web dashboard for viewing statistics and content uploaded by users.
+							</li>
+							<li class="d-item">
+								The front end was built using Angular which was later pivoted to Flutter.
+							</li>
+							<li class="d-item">
+								The API for the dashboard was built using NodeJS on the server side and Postgres for the database.
+							</li>
+							<li class="d-item">
+								Integrated Stripe Payments API for this project.
+							</li>
+						</ul>
 					</div>
-					<ul class="details">
-						<li class="d-item">
-							Worked on building a web dashboard for viewing statistics and content uploaded by users.
-						</li>
-						<li class="d-item">
-							The front end was built using Angular which was later pivoted to Flutter.
-						</li>
-						<li class="d-item">
-							The API for the dashboard was built using NodeJS on the server side and Postgres for the database.
-						</li>
-						<li class="d-item">
-							Integrated Stripe Payments API for this project.
-						</li>
-					</ul>
-				</div>
-				<hr class="divider">
-				<div class="item">
-					<h4>Finance Analyst Intern</h4>
-					<h5>Invsto</h5>
-					<div class="pl">
-						<div class="pl-item">
-							<span class="material-icons">
-								calendar_today
-							</span>
-							<span class="value">
-								Mar 2019 - Nov 2019
-							</span>
+					<hr class="divider">
+					<div class="item">
+						<h4>Finance Analyst Intern</h4>
+						<h5>Invsto</h5>
+						<div class="pl">
+							<div class="pl-item">
+								<span class="material-icons">
+									calendar_today
+								</span>
+								<span class="value">
+									Mar 2019 - Nov 2019
+								</span>
+							</div>
+							<div class="pl-item">
+								<span class="material-icons">
+									location_on
+								</span>
+								<span class="value">
+									Bengaluru, India
+								</span>
+							</div>
 						</div>
-						<div class="pl-item">
-							<span class="material-icons">
-								location_on
-							</span>
-							<span class="value">
-								Bengaluru, India
-							</span>
-						</div>
+						<ul class="details">
+							<li class="d-item">
+								Backtesting: Building financial strategies and analyzers for the OHLC market data using Python
+							</li>
+							<li class="d-item">
+								Scraping the financial Statements of hundreds of equities using Python modules 'BeautifulSoup' and
+								'pandas'. Also, implementing financial models, such as Discounted Cash Flow, that uses this data to tell a
+								company's worth.
+							</li>
+						</ul>
 					</div>
-					<ul class="details">
-						<li class="d-item">
-							Backtesting: Building financial strategies and analyzers for the OHLC market data using Python
-						</li>
-						<li class="d-item">
-							Scraping the financial Statements of hundreds of equities using Python modules 'BeautifulSoup' and
-							'pandas'. Also, implementing financial models, such as Discounted Cash Flow, that uses this data to tell a
-							company's worth.
-						</li>
-					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="page" id="page3">
-			<div class="content">
-				<h1 class="title">Projects</h1>
-				<div class="item">
-					<h4>Blindness Detection | Computer Vision</h4>
-					<ul class="details">
-						<li class="d-item">
-							Built a CNN model to classify high resolution retina images among five classes of Diabetic Retinopathy, a
-							disease causing blindness in middle age adults
-						</li>
-					</ul>
+			<div class="container">
+				<div class="content">
+					<h1 class="title">Projects</h1>
+					<div class="item">
+						<h4>Blindness Detection | Computer Vision</h4>
+						<ul class="details">
+							<li class="d-item">
+								Built a CNN model to classify high resolution retina images among five classes of Diabetic Retinopathy, a
+								disease causing blindness in middle age adults
+							</li>
+						</ul>
+					</div>
+					<hr class="divider">
+					<div class="item">
+						<h4><a href="#">Web Portfolio</a></h4>
+						<ul class="details">
+							<li class="d-item">
+								HTML, CSS, JavaScript, JQuery
+							</li>
+							<li class="d-item">
+								A web based portfolio built using core technologies and frameworks
+							</li>
+						</ul>
+					</div>
+					<hr class="divider">
+					<div class="item">
+						<h4>
+							Trade It Off | DBMS Project
+						</h4>
+						<ul class="details">
+							<li class="d-item">
+								MySQL, Node.js, Express, HTML/CSS
+							</li>
+							<li class="d-item">
+								An e-commerce website to sell/purchase used and new products over the internet.
+								You can find the project at <a href="https://trade-it-off.herokuapp.com" target="_blank">here.</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<hr class="divider">
-				<div class="item">
-					<h4><a href="#">Web Portfolio</a></h4>
-					<ul class="details">
-						<li class="d-item">
-							HTML, CSS, JavaScript, JQuery
-						</li>
-						<li class="d-item">
-							A web based portfolio built using core technologies and frameworks
-						</li>
-					</ul>
-				</div>
-				<hr class="divider">
-				<div class="item">
-					<h4>
-						Trade It Off | DBMS Project
-					</h4>
-					<ul class="details">
-						<li class="d-item">
-							MySQL, Node.js, Express, HTML/CSS
-						</li>
-						<li class="d-item">
-							An e-commerce website to sell/purchase used and new products over the internet.
-							You can find the project at <a href="https://trade-it-off.herokuapp.com" target="_blank">here.</a>
-						</li>
-					</ul>
-				</div>
+				<img src="assets/images/laptop-1209008_640.jpg" class="work-image" alt="Laptop" loading="lazy">
 			</div>
-			<img src="assets/images/laptop-1209008_640.jpg" class="work-image" alt="Laptop" loading="lazy">
 		</div>
 		<div class="page" id="page4">
-			<img src="assets/images/laptop-1209008_640.jpg" class="work-image" alt="Laptop" loading="lazy">
-			<div class="content">
-				<div>
-					<h1 class="title">Technical Skills</h1>
-					<h6>Tech Stack that I have worked on:</h6>
+			<div class="container">
+				<img src="assets/images/laptop-1209008_640.jpg" class="work-image" alt="Laptop" loading="lazy">
+				<div class="content">
+					<div>
+						<h1 class="title">Technical Skills</h1>
+						<h6>Tech Stack that I have worked on:</h6>
+					</div>
+					<div class="skills">
+						<div class="skill-item">
+							<i class="fas fa-code icon"></i>
+							<small>C/C++</small>
+						</div>
+						<div class="skill-item">
+							<i class="fab fa-python icon"></i>
+							<small>Python</small>
+						</div>
+						<div class="skill-item">
+							<i class="fab fa-js-square icon"></i>
+							<small>Javascript</small>
+						</div>
+						<div class="skill-item">
+							<i class="fas fa-code icon"></i>
+							<small>Flutter</small>
+						</div>
+						<div class="skill-item">
+							<i class="fab fa-html5 icon"></i>
+							<small>HTML</small>
+						</div>
+						<div class="skill-item">
+							<i class="fab fa-css3-alt icon"></i>
+							<small>CSS</small>
+						</div>
+						<div class="skill-item">
+							<i class="fab fa-angular icon"></i>
+							<small>Angular</small>
+						</div>
+						<div class="skill-item">
+							<i class="fab fa-git icon"></i>
+							<small>Git</small>
+						</div>
+						<div class="skill-item">
+							<i class="fas fa-database icon"></i>
+							<small>SQL</small>
+						</div>
+						<div class="skill-item">
+							<i class="fab fa-node-js icon"></i>
+							<small>Node.js</small>
+						</div>
+						<div class="skill-item">
+							<i class="fab fa-linux icon"></i>
+							<small>Linux</small>
+						</div>
+					</div>
 				</div>
-				<div class="skills">
-					<div class="skill-item">
-						<i class="fas fa-code icon"></i>
-						<small>C/C++</small>
-					</div>
-					<div class="skill-item">
-						<i class="fab fa-python icon"></i>
-						<small>Python</small>
-					</div>
-					<div class="skill-item">
-						<i class="fab fa-js-square icon"></i>
-						<small>Javascript</small>
-					</div>
-					<div class="skill-item">
-						<i class="fas fa-code icon"></i>
-						<small>Flutter</small>
-					</div>
-					<div class="skill-item">
-						<i class="fab fa-html5 icon"></i>
-						<small>HTML</small>
-					</div>
-					<div class="skill-item">
-						<i class="fab fa-css3-alt icon"></i>
-						<small>CSS</small>
-					</div>
-					<div class="skill-item">
-						<i class="fab fa-angular icon"></i>
-						<small>Angular</small>
-					</div>
-					<div class="skill-item">
-						<i class="fab fa-git icon"></i>
-						<small>Git</small>
-					</div>
-					<div class="skill-item">
-						<i class="fas fa-database icon"></i>
-						<small>SQL</small>
-					</div>
-					<div class="skill-item">
-						<i class="fab fa-node-js icon"></i>
-						<small>Node.js</small>
-					</div>
-					<div class="skill-item">
-						<i class="fab fa-linux icon"></i>
-						<small>Linux</small>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</div>

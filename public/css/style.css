@@ -2,10 +2,14 @@
 
 :root {
 	--bg-color: #ccc;
-	--text-color: rgb(31, 28, 28);
+	--text-color: rgb(255, 255, 255);
 	--divider-color: rgb(170, 161, 161);
-	--header-bg-color: rgb(120, 120, 120, 0.9);
-	--nav-button-hover-color: white;
+	--header-bg-color: rgb(0, 0, 0, 0.2);
+	--nav-button-hover-color: rgb(0, 0, 0, 0.2);
+
+	--page1-bgcolor: rgb(67, 79, 87, 1);
+	--page2-bgcolor: rgb(150, 150, 150);
+	--page3-bgcolor: rgb(30, 30, 30);
 }
 
 * {
@@ -27,17 +31,16 @@ li {
 	margin: 8px 0;
 }
 
-body {
+/* body {
   background-color: var(--bg-color);
-}
+} */
 
 /* main */
 
 .main {
 	position: relative;
-	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 40px;
+	padding: 0 0;
 }
 
 .header {
@@ -91,9 +94,15 @@ body {
 	position: relative;
 
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+}
+
+.hero .title-dp {
+	display: flex;
+	position: relative;
 }
 
 .hero .dp {
@@ -139,8 +148,25 @@ body {
 	cursor: pointer;
 }
 
+.hero .links {
+	position: absolute;
+	bottom: -20px;
+	/* transform: translateX(-150px); */
+}
 
-.page {
+.hero .links ul {
+	display: flex;
+	list-style-type: none;
+}
+
+.hero .links ul a {
+	text-decoration: none;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -148,34 +174,34 @@ body {
 	gap: 20%;
 }
 
-.page >* {
+.container >* {
 	width: 40%;
 }
 
-.page .content .title {
+.container .content .title {
 	text-transform: uppercase;
 	text-decoration: underline;
 	font-weight: bold;
 }
 
-.page .content .item .pl {
+.container .content .item .pl {
 	display: flex;
 	justify-content: space-between;
 }
 
-.page .content .item .pl .pl-item .material-icons {
+.container .content .item .pl .pl-item .material-icons {
 	font-size: 0.8em;
 }
 
-.page .content .item .pl .pl-item .value {
+.container .content .item .pl .pl-item .value {
 	font-size: 0.8em;
 }
 
-.page .content .item ul.details {
+.container .content .item ul.details {
 	list-style-position: inside;
 }
 
-.page .skills {
+.container .skills {
 	padding: 10px 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -183,22 +209,38 @@ body {
 	gap: 12px;
 }
 
-.page .skills .skill-item {
+.container .skills .skill-item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	cursor: pointer;
 }
 
-.page .skills .skill-item .icon {
+.container .skills .skill-item .icon {
 	font-size: 2em;
 	color: black;
 }
 
-.page .skills .skill-item .icon:hover {
+.container .skills .skill-item .icon:hover {
 	color: grey;
 }
 
+#page1 {
+	background-color: var(--page1-bgcolor);
+}
+
+#page2 {
+	background-color: var(--page2-bgcolor);
+}
+
+#page3 {
+	background-color: var(--page3-bgcolor);
+}
+
+#page4 {
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to right, var(--page1-bgcolor), var(--page2-bgcolor));
+}
 
 @media only screen and (max-width: 768px) {
 	.page2 >* {
