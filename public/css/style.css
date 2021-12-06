@@ -9,7 +9,10 @@
 
 	--page1-bgcolor: rgb(67, 79, 87, 1);
 	--page2-bgcolor: rgb(150, 150, 150);
-	--page3-bgcolor: rgb(30, 30, 30);
+	/* --page3-bgcolor: rgb(30, 30, 30); */
+	--page3-bgcolor: rgb(0, 0, 0);
+	--page4-bgcolor-1: rgb(50, 63, 82);
+	--page4-bgcolor-2: rgb(150, 150, 150);
 }
 
 * {
@@ -150,17 +153,42 @@ li {
 
 .hero .links {
 	position: absolute;
+	right: 0px;
 	bottom: -20px;
-	/* transform: translateX(-150px); */
 }
 
 .hero .links ul {
 	display: flex;
 	list-style-type: none;
+	gap: 20px;
+}
+
+.hero .links ul li a {
+	text-decoration: none;
+	/* display: block; */
+	position: relative;
 }
 
 .hero .links ul a {
 	text-decoration: none;
+}
+
+.hero .links ul a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1rem;
+	background-color: white;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+}
+
+.hero .links ul a:hover::after,
+.hero .links ul a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
 
 
@@ -239,7 +267,7 @@ li {
 
 #page4 {
 	background-repeat: no-repeat;
-	background-image: linear-gradient(to right, var(--page1-bgcolor), var(--page2-bgcolor));
+	background-image: linear-gradient(to right, var(--page4-bgcolor-1), var(--page4-bgcolor-2));
 }
 
 @media only screen and (max-width: 768px) {
